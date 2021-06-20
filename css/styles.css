@@ -38,10 +38,6 @@
     background-color: #FFF;
 }
 
-.main-white {
-    background-color: #FFF;
-}
-
 .second-section {
     background-color: #1937B5;
 }
@@ -75,7 +71,9 @@
 .description {
     min-height: 10em;
 }
-
+.page-footer{
+    background: #414141;
+}
 
 @media (max-width: 992px) {
     .principal-title{
