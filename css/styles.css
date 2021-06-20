@@ -38,6 +38,18 @@
     background-color: #FFF;
 }
 
+.main-white {
+    background-color: #FFF;
+}
+
+.second-section {
+    background-color: #1937B5;
+}
+
+.second-section h2 {
+    font-size: 3em;
+}
+
 .feature-img{
     height: 110px !important;
 }
@@ -58,6 +70,10 @@
     border-radius: 20px !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+}
+
+.description {
+    min-height: 10em;
 }
 
 
