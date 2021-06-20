@@ -34,12 +34,25 @@
     background-color: #EBEBEB;
 }
 
-
+.main-white {
+    background-color: #FFF;
+}
 
 .feature-img{
     height: 110px !important;
 }
 
+.example-app{
+    height: 600px !important;
+}
+
+.legend{
+    width: 50%;
+}
+
+.app-example-app-left, .app-example-app-right{
+    text-align: center;
+}
 
 .button {
     border-radius: 20px !important;
@@ -82,5 +95,18 @@
     }
     .feature-img{
         height: 75px !important;
+    }
+    .legend {
+        font-size: 11px;
+        width: 100%;
+    }
+    .example-app{
+        height: 230px !important;
+    }
+    .app-example-app-right{
+        text-align: right;
+    }
+    .app-example-app-left{
+        text-align: left;
     }
 }
