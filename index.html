@@ -1,57 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico"/>
-    <link rel="StyleSheet" type="text/css" href="./css/styles.css"/>
-    <title>Share</title>
-</head>
-<body>
-    <div class="Descrp" style="text-align: center;padding: 0px !important;">
-        <div class="filtroazul">
-            <h1 class="display-4">¿Cómo funciona?</h1>
-        </div>
-    </div>
-    <div class="circulo">
-        <div class="Parrafo1">
-        <p>
-        <h3> Descarga la aplicación</h3>
-        <p> Oriéntate con nosotros en cualquier lugar.<br>
-            Disponible en iOs y Android.
-        </p>
-        </p>
-        </div>
-        <div class="apps">
-            <a href="#"><img height="110px" src="./img/AppstoreGoogle.png"></a>
-        </div>
-    </div>
-    <div class="imagns">
-        <a href="#"><img src="./img/Wire1.png ">  </a>
-    </div>
-    <div class="imagns2">
-        <a href="#"><img src="./img/Wire2.png ">  </a>
-    </div>
-        <div class="Parrafo2">
-        <p>
-        <h3> Créate una cuenta</h3>
-        <p> Regístrate gratis ingresando tus datos y accede a nuestro<br>
-            contenido.
-        </p>
-        </p>
-        </div>
-    <div class="Parrafo3">
-        <p>
-        <h3> Explora las opciones disponibles</h3>
-        <p> Dentro de nuestra aplicación podrás conocer la<br>
-            información de nuestros asesores, elegir y reservar una clase<br>
-            con ellos.
-        </p>
-        </p>
-    </div>
-    <div class="imagns3">
-        <a href="#"><img src="./img/Wire3.png ">  </a>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+        <link rel="StyleSheet" type="text/css" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/colores.css" />
+        <title>Share</title>
+    </head>
+    <body>
+        <header class="principal-bg bg-primary">
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/img/logo.png" alt="logo-share" height="30" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white text-uppercase" href="#">Características</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white text-uppercase" href="#">Tutorial</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white text-uppercase" href="#">Logros</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-white text-uppercase" href="#">Testimonios</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary button text-uppercase btn-padding-x-sm fw-bold"
+                                >
+                                    Únete
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div class="container mt-2 p-4">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 mt-4">
+                            <h1 class="principal-title text-white">
+                                Encuentra la asesorías que estabas
+                                <span class="principal-title--cream text-secondary">buscando</span>
+                            </h1>
+                            <p class="text-white mb-4 principal-message">
+                                Conoce a nuestros mejores asesores en el área de tecnología e información y refuerza tus
+                                conocimientos con nosotros de manera rápida y sencilla.
+                            </p>
+                            <div class="mb-4 principal-message">
+                                <img src="./img/app-store.png" alt="" class="img-fluid principal-img mr-4" />
+                                <img src="./img/google-play.png" alt="" class="img-fluid principal-img" />
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-12"></div>
+                        <div class="col-lg-5 col-md-12 text-center">
+                            <img src="./img/portada-screens.png" alt="" class="img-fluid big-principal-img ms-2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="p-5 main">
+            <section>
+                <h2 class="secondary-title text-primary text-center">Conseguir un asesor nunca fue tan fácil</h2>
+                <p class="text-dark text-center">
+                    Te brindamos todas las facilidades para que puedas reservar tu asesorías sin pasar horas buscando
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-124">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                                <div class="feature-item">
+                                    <div class="p-2 text-center">
+                                        <img src="./img/feature1.png" alt="" class="img-fluid feature-img" />
+                                    </div>
+                                    <div class="p-2 text-center fw-bold">Muchas opciones para elegir</div>
+                                    <div class="p-2 text-center">
+                                        Podrás encontrar una lista de asesores disponibles en un solo lugar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-124">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                                <div class="feature-item">
+                                    <div class="p-2 text-center">
+                                        <img src="./img/feature2.png" alt="" class="img-fluid feature-img" />
+                                    </div>
+                                    <div class="p-2 text-center fw-bold">Muchas opciones para elegir</div>
+                                    <div class="p-2 text-center">
+                                        Podrás encontrar una lista de asesores disponibles en un solo lugar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-124">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                                <div class="feature-item">
+                                    <div class="p-2 text-center">
+                                        <img src="./img/feature3.png" alt="" class="img-fluid feature-img" />
+                                    </div>
+                                    <div class="p-2 text-center fw-bold">Muchas opciones para elegir</div>
+                                    <div class="p-2 text-center">
+                                        Podrás encontrar una lista de asesores disponibles en un solo lugar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
