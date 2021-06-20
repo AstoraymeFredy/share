@@ -72,6 +72,10 @@
     background: #414141;
 }
 
+.footer {
+    background-color: #414141;
+}
+
 @media (max-width: 992px) {
     .principal-title{
         font-size: 3rem;
