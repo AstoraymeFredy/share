@@ -4,18 +4,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
-        <link rel="StyleSheet" type="text/css" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/colores.css" />
+        <link rel="StyleSheet" type="text/css" href="./css/styles.css" />
+
         <title>Share</title>
     </head>
     <body>
+        <!--Header-->
         <header class="principal-bg bg-primary">
+            <!--Navbar-->
             <nav class="navbar navbar-expand-md navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="/img/white-logo.png" alt="logo-share" height="30" />
                     </a>
+                    <!--Navbar:button-collapse-->
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -27,19 +31,20 @@
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!--Navbar:items-menu-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#">Características</a>
+                                <a class="nav-link text-white text-uppercase" href="#features">Características</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#">Tutorial</a>
+                                <a class="nav-link text-white text-uppercase" href="#tutorial">Tutorial</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#">Logros</a>
+                                <a class="nav-link text-white text-uppercase" href="#experience">Logros</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#">Testimonios</a>
+                                <a class="nav-link text-white text-uppercase" href="#testimonials">Testimonios</a>
                             </li>
                             <li class="nav-item ms-3">
                                 <button
@@ -53,42 +58,44 @@
                     </div>
                 </div>
             </nav>
-            <div>
-                <div class="container mt-2 p-4">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-12 mt-4">
-                            <h1 class="principal-title text-white">
-                                Encuentra la asesorías que estabas
-                                <span class="principal-title--cream text-secondary">buscando</span>
-                            </h1>
-                            <p class="text-white mb-4 principal-message">
-                                Conoce a nuestros mejores asesores en el área de tecnología e información y refuerza tus
-                                conocimientos con nosotros de manera rápida y sencilla.
-                            </p>
-                            <div class="mb-4 principal-message">
-                                <img src="./img/app-store.png" alt="" class="img-fluid principal-img mr-4" />
-                                <img src="./img/google-play.png" alt="" class="img-fluid principal-img" />
-                            </div>
+            <!--Welcome-->
+            <div class="container mt-2 p-4">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 mt-4 principal-left">
+                        <h1 class="principal-title text-white">
+                            Encuentra la asesorías que estabas
+                            <span class="principal-title--cream text-secondary">buscando</span>
+                        </h1>
+                        <p class="text-white mb-4 principal-message">
+                            Conoce a nuestros mejores asesores en el área de tecnología e información y refuerza tus
+                            conocimientos con nosotros de manera rápida y sencilla.
+                        </p>
+                        <div class="mb-4 principal-message">
+                            <img src="./img/app-store.png" alt="" class="img-fluid principal-img mr-4" />
+                            <img src="./img/google-play.png" alt="" class="img-fluid principal-img" />
                         </div>
-                        <div class="col-lg-1 col-md-12"></div>
-                        <div class="col-lg-5 col-md-12 text-center">
-                            <img src="./img/portada-screens.png" alt="" class="img-fluid big-principal-img ms-2" />
-                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-12"></div>
+                    <div class="col-lg-5 col-md-12 text-center">
+                        <img src="./img/portada-screens.png" alt="" class="img-fluid big-principal-img ms-2" />
                     </div>
                 </div>
             </div>
+            <!--Wave-->
+            <div class="wave" id="features"></div>
         </header>
-        <main class="p-5 main">
-            <section>
+        <main class="main">
+            <!--Features-->
+            <section class="features animated p-5">
                 <h2 class="secondary-title text-primary text-center">Conseguir un asesor nunca fue tan fácil</h2>
                 <p class="text-dark text-center">
                     Te brindamos todas las facilidades para que puedas reservar tu asesorías sin pasar horas buscando
                 </p>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-124">
+                        <div class="col-lg-4 col-md-12">
                             <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
-                                <div class="feature-item">
+                                <div class="feature-item animated">
                                     <div class="p-2 text-center">
                                         <img src="./img/feature1.png" alt="" class="img-fluid feature-img" />
                                     </div>
@@ -99,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-124">
+                        <div class="col-lg-4 col-md-12">
                             <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
                                 <div class="feature-item">
                                     <div class="p-2 text-center">
@@ -112,9 +119,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-124">
+                        <div class="col-lg-4 col-md-12">
                             <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
-                                <div class="feature-item">
+                                <div class="feature-item animated">
                                     <div class="p-2 text-center">
                                         <img src="./img/feature3.png" alt="" class="img-fluid feature-img" />
                                     </div>
@@ -128,127 +135,165 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <main class="p-4 main-white">
-            <section class="mt-4 mb-4">
-                <h2 class="secondary-title text-primary text-center pb-4">¿Cómo funciona?</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div>
-                                    <div class="app-example-app-right">
-                                        <img src="./img/example-app-main.png" alt="" class="example-app img-fluid" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="col d-flex flex-column align-items-start">
-                                    <div class="text-left fw-bold h5">Descarga la aplicación</div>
-                                    <div class="p-1 text-left legend">
-                                        Oriéntate con nosotros en cualquier lugar. Disponible en dispositivos con iOS y
-                                        Android.
-                                    </div>
-                                    <div class="pt-2">
-                                        <img src="./img/AppstoreGoogle.png" alt="" class="feature-img" />
-                                    </div>
+            <!--How It Works-->
+            <section class="how p-5" id="tutorial">
+                <h2 class="secondary-title text-primary text-center mb-4 animated">¿Cómo funciona?</h2>
+                <div class="row animated">
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div>
+                                <div class="app-example-app-right">
+                                    <img src="./img/example-app-main.png" alt="" class="example-app img-fluid" />
+                                    <img
+                                        src="./img/example-app-main-reduced.png"
+                                        alt=""
+                                        class="example-app-reduced img-fluid"
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col d-flex align-items-center">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="col d-flex flex-column align-items-end">
-                                    <div class="text-center fw-bold h5">Créate una cuenta</div>
-                                    <div class="p-1 text-right legend">
-                                        Regístrate gratis ingresando tus datos y accede a nuestro contenido.
-                                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="col d-flex flex-column align-items-start">
+                                <div class="text-left fw-bold h5">Descarga la aplicación</div>
+                                <div class="p-1 text-left legend">
+                                    Oriéntate con nosotros en cualquier lugar. Disponible en dispositivos con iOS y
+                                    Android.
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div>
-                                    <div class="app-example-app-right">
-                                        <img src="./img/example-app-login.png" alt="" class="example-app img-fluid" />
-                                    </div>
+                                <div class="pt-2">
+                                    <img src="./img/AppstoreGoogle.png" alt="" class="feature-img" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div>
-                                    <div class="app-example-app-right">
-                                        <img src="./img/example-app-list.png" alt="" class="example-app img-fluid" />
-                                    </div>
+                </div>
+                <div class="row animated">
+                    <div class="col d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="col d-flex flex-column align-items-end">
+                                <div class="text-center fw-bold h5">Créate una cuenta</div>
+                                <div class="p-1 text-right legend">
+                                    Regístrate gratis ingresando tus datos y accede a nuestro contenido.
                                 </div>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-center">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="col d-flex flex-column align-items-start">
-                                    <div class="text-left fw-bold h5">Explora las opciones disponibles</div>
-                                    <div class="p-1 text-left legend">
-                                        Dentro de nuestra aplicación podrás conocer la información de los asesores,
-                                        elegir y reservar una clase con ellos.
-                                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div>
+                                <div class="app-example-app-right">
+                                    <img src="./img/example-app-login.png" alt="" class="example-app img-fluid" />
+                                    <img
+                                        src="./img/example-app-login-reduced.png"
+                                        alt=""
+                                        class="example-app-reduced img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row animated">
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div>
+                                <div class="app-example-app-right">
+                                    <img src="./img/example-app-list.png" alt="" class="example-app img-fluid" />
+                                    <img
+                                        src="./img/example-app-list-reduced.png"
+                                        alt=""
+                                        class="example-app-reduced img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="col d-flex flex-column align-items-start">
+                                <div class="text-left fw-bold h5">Explora las opciones disponibles</div>
+                                <div class="p-1 text-left legend">
+                                    Dentro de nuestra aplicación podrás conocer la información de los asesores, elegir y
+                                    reservar una clase con ellos.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
-        <main class="p-4 second-section">
-            <section>
-                <h2 class="secondary-title text-center text-white">Confía en nuestra experiencia</h2>
-                <div class="p-2 text-white text-center">
+            <!--Experience-->
+            <section class="experience p-5" id="experience">
+                <h2 class="secondary-title text-center text-white animated">Confía en nuestra experiencia</h2>
+                <div class="text-white text-center animated">
                     Podrás encontrar una lista de asesores disponibles en un solo lugar
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-lg-3">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
-                                <div class="description d-flex flex-column justify-content-center align-items-center">
+                <div class="container animated">
+                    <div class="row mt-4">
+                        <div class="col-6 col-sm-6 col-lg-3 animated">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div
+                                    class="
+                                        description
+                                        border-end
+                                        d-flex
+                                        flex-column
+                                        justify-content-center
+                                        align-items-center
+                                    "
+                                >
                                     <div>
-                                        <div class="p-2 text-center h3 fw-bold text-white">S/. 35</div>
-                                        <div class="p-2 text-center text-white">Tarifa por hora</div>
+                                        <div class="text-center h3 fw-bold text-white number">S/. 35</div>
+                                        <div class="p-1 text-center text-white">Tarifa por hora</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-3">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
-                                <div class="description d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div
+                                    class="
+                                        description
+                                        border-end
+                                        d-flex
+                                        flex-column
+                                        justify-content-center
+                                        align-items-center
+                                    "
+                                >
                                     <div>
-                                        <div class="p-2 text-center h3 fw-bold text-white">500+</div>
-                                        <div class="p-2 text-center text-white">Asesores</div>
+                                        <div class="text-center h3 fw-bold text-white number">500+</div>
+                                        <div class="p-1 text-center text-white">Asesores</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-6 col-sm-6 col-lg-3">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
-                                <div class="description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-6 col-sm-6 col-lg-3 animated">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div
+                                    class="
+                                        description
+                                        border-end
+                                        d-flex
+                                        flex-column
+                                        justify-content-center
+                                        align-items-center
+                                    "
+                                >
                                     <div>
-                                        <div class="p-2 text-center h3 fw-bold text-white">10000+</div>
-                                        <div class="p-2 text-center text-white">Estudiantes</div>
+                                        <div class="text-center h3 fw-bold text-white number">10000+</div>
+                                        <div class="p-1 text-center text-white">Estudiantes</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-3">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                            <div class="d-flex flex-column justify-content-center">
                                 <div class="description d-flex flex-column justify-content-center align-items-center">
                                     <div>
-                                        <div class="p-2 text-center h3 fw-bold text-white">15</div>
-                                        <div class="p-2 text-center text-white">Departamentos</div>
+                                        <div class="text-center h3 fw-bold text-white number">15</div>
+                                        <div class="p-1 text-center text-white">Departamentos</div>
                                     </div>
                                 </div>
                             </div>
@@ -256,63 +301,210 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <main class="p-4 main-white">
-            <section>
-                <h2 class="secondary-title text-primary text-center">¿Quieres ser un asesor de Share?</h2>
-                <div>
-                    <div class="container mt-2 p-4">
-                        <div class="row">
-                            <div class="col-lg-6 mt-5">
-                                <img src="./img/CirculoVineta.png" class="rounded float-start" alt="" />
-                                <div class="ml-sm-5 text-xxl-start">
+            <!--Testimonial-->
+            <section class="testimonials py-5" id="testimonials">
+                <h2 class="secondary-title text-primary text-center animated">Testimonios</h2>
+                <p class="text-dark text-center animated">Mira lo que nuestros clientes hablan de nosotros</p>
+                <div
+                    id="carouselExampleDark"
+                    data-bs-ride="carousel"
+                    class="mt-4 testimonials-clean carousel carousel-dark slide animated"
+                >
+                    <div class="container carousel-inner">
+                        <div class="container carousel-inner">
+                            <div class="row people carousel-item active">
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Rápido y eficiente</p>
+                                        <p class="">Pude realizar una reserva en poco tiempo y sin complicaciones.</p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Mejor servicio</p>
+                                        <p class="">
+                                            Cumplió mis expectativas, la mejor plataforma de asesorías virtual.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Buenos docentes</p>
+                                        <p class="">
+                                            Gran variedad de asesores que me ayudaron bastante en mi rendimiento
+                                            académico.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row people carousel-item">
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Rápido y eficiente</p>
+                                        <p class="">Pude realizar una reserva en poco tiempo y sin complicaciones.</p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Mejor servicio</p>
+                                        <p class="">
+                                            Cumplió mis expectativas, la mejor plataforma de asesorías virtual.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 item">
+                                    <div class="box">
+                                        <p class="text-dark fw-bold">Buenos docentes</p>
+                                        <p class="">
+                                            Gran variedad de asesores que me ayudaron bastante en mi rendimiento
+                                            académico.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <img class="rounded-circle" src="./img/person.png" />
+                                        <h5 class="name">José Cooper</h5>
+                                        <p class="title">Estudiante de UPC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!--Email-->
+            <section class="email p-5" >
+                <div class="container animated email-container">
+                    <div class="row">
+                      <div class="col animated text-center">
+                        <img src="./img/email.png" />
+                      </div>
+                      <div class="col animated">
+                        <h3 class="secondary-title text-white text-center animated">Suscríbete para más novedades</h3>
+                        <div class="input-group mb-3 mt-3">
+                            <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Ingresa tu email" aria-describedby="button-email">
+                            <button class="btn btn-dark" type="button" id="button-email">Suscríbete</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!--Asesor-->
+            <section class="px-5 pt-5 bg-white">
+                <h2 class="secondary-title text-primary text-center animated">¿Quieres ser un asesor de Share?</h2>
+                <div class="container mt-2">
+                    <div class="row">
+                        <div class="col-md-6 mt-5 animated">
+                            <div class="row mb-4">
+                                <div class="col-auto">
+                                    <img src="./img/CirculoVineta.png" class="rounded float-start" alt="" />
+                                </div>
+                                <div class="col">
                                     <p class="fw-bold h5">Incrementa tus asesorías</p>
-                                </div>
-                                <p>
-                                    Enseña y ayuda a más estudiantes a mejorar su rendimiento académico y logren sus
-                                    objetivos.
-                                </p>
-                                <div class="mt-5"></div>
-                                <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
-                                <p class="fw-bold h5">Gana dinero</p>
-                                <p>Comparte tus conocimientos y genera ganancias por cada asesoría que brindas.</p>
-                                <div class="mt-5"></div>
-                                <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
-                                <p class="fw-bold h5">Tu información disponible</p>
-                                <p>
-                                    Presenta tu información educativa y laboral para que los estudiantes conozcan más
-                                    sobre ti.
-                                </p>
-                                <div class="mt-5"></div>
-                                <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
-                                <p class="fw-bold h5">Gestiona tu tiempo</p>
-                                <p>
-                                    Acomoda tus horarios disponibles como quieras, nuestras políticas promueven la
-                                    flexibilidad de nuestros asesores.
-                                </p>
-                                <div class="mt-lg-5"></div>
-                                <div class="mb-4 text-lg-center">
-                                    <img src="./img/Google_Play.png" alt="" class="img-fluid principal-img mr-4" />
-                                    <img src="./img/App_Store.png" alt="" class="img-fluid principal-img" />
+                                    <p class="mb-0">
+                                        Enseña y ayuda a más estudiantes a mejorar su rendimiento académico y logren sus
+                                        objetivos.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-md-12 text-right">
-                                <img src="./img/PersonaShare.png" alt="" class="img-fluid big-principal-img ms-2" />
+                            <div class="row mb-4">
+                                <div class="col-auto">
+                                    <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold h5">Gana dinero</p>
+                                    <p class="mb-0">
+                                        Comparte tus conocimientos y genera ganancias por cada asesoría que brindas.
+                                    </p>
+                                </div>
                             </div>
+                            <div class="row mb-4">
+                                <div class="col-auto">
+                                    <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold h5">Tu información disponible</p>
+                                    <p class="mb-0">
+                                        Presenta tu información educativa y laboral para que los estudiantes conozcan
+                                        más sobre ti.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-auto">
+                                    <img src="./img/CirculoVineta.png" class="rounded float-start" alt="..." />
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold h5">Gestiona tu tiempo</p>
+                                    <p class="mb-0">
+                                        Acomoda tus horarios disponibles como quieras, nuestras políticas promueven la
+                                        flexibilidad de nuestros asesores.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-lg-5"></div>
+                            <div class="mb-4 d-flex justify-content-center">
+                                <img src="./img/Google_Play.png" alt="" class="img-fluid principal-img mr-4" />
+                                <img src="./img/App_Store.png" alt="" class="img-fluid principal-img" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right animated">
+                            <img src="./img/PersonaShare.png" alt="" class="img-fluid ms-2 d-none d-md-block" />
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-dark text-white">
+        <footer class="text-center text-lg-start bg-dark text-white p-5">
             <!-- Section: Links  -->
             <section class="">
-                <div class="container text-left text-md-start mt-5">
+                <div class="container text-left text-md-start">
                     <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="row">
+                        <div class="col-md-5">
                             <!-- Content -->
                             <h6 class="text-uppercase fw-bold mb-4">
                                 <i class="fas fa-gem me-3"></i
@@ -323,8 +515,7 @@
                                 tecnología e información.
                             </p>
                         </div>
-
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                        <div class="col-md-3">
                             <!-- Links -->
                             <h6 class="text-left fw-bold mb-4">Menú</h6>
                             <p>
@@ -340,35 +531,25 @@
                                 <a href="#!" class="text-reset">Testimonios</a>
                             </p>
                         </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <div class="col-md-4">
                             <!-- Links -->
                             <h6 class="fw-bold mb-4">Contacto</h6>
-                            <p>
-                                <i class="bi bi-envelope me-3"></i>
-                                contacto@share.com.pe
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope me-3"></i>
-                                +51 922556565
-                            </p>
-                            <p><i class="fas fa-phone me-3"></i> 772 Av. Grau - La Molina</p>
+                            <p>contacto@share.com.pe</p>
+                            <p>+51 922556565</p>
+                            <p>772 Av. Grau - La Molina</p>
                         </div>
-                        <!-- Grid column -->
+                        <!-- Copyright -->
+                        <div class="col-xs-12 text-left p-3" style="background-color: #414141">
+                            © 2021 Share. Todos los derechos reservados
+                        </div>
+                        <!-- Copyright -->
                     </div>
                     <!-- Grid row -->
                 </div>
             </section>
-            <!-- Section: Links  -->
-
-            <!-- Copyright -->
-            <div class="text-left p-3" style="background-color: #414141">
-                © 2021 Share. Todos los derechos reservados
-            </div>
-            <!-- Copyright -->
         </footer>
         <!-- Footer -->
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
