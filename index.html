@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/colores.css" />
@@ -11,55 +12,60 @@
         <title>Share</title>
     </head>
     <body>
-        <!--Header-->
-        <header class="principal-bg bg-primary">
-            <!--Navbar-->
-            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/white-logo.png" alt="logo-share" height="30" />
-                    </a>
-                    <!--Navbar:button-collapse-->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!--Navbar:items-menu-->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#features">Características</a>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#tutorial">Tutorial</a>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#experience">Logros</a>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link text-white text-uppercase" href="#testimonials">Testimonios</a>
-                            </li>
-                            <li class="nav-item ms-3">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/white-logo.png" alt="logo-share" height="30" />
+                </a>
+                <!--Navbar:button-collapse-->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar:items-menu-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white text-uppercase" href="#features">Características</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white text-uppercase" href="#tutorial">Tutorial</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white text-uppercase" href="#experience">Logros</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white text-uppercase" href="#testimonials">Testimonios</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white text-uppercase" href="#teachers">Asesores</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a href="#subscribe">
                                 <button
                                     type="button"
                                     class="btn btn-secondary button text-uppercase btn-padding-x-sm fw-bold"
                                 >
                                     Únete
                                 </button>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <!--Header-->
+        <header class="principal-bg bg-primary">
             <!--Welcome-->
-            <div class="container mt-2 p-4">
+            <div class="container p-4">
                 <div class="row">
                     <div class="col-lg-5 col-md-12 mt-4 principal-left">
                         <h1 class="principal-title text-white">
@@ -71,8 +77,13 @@
                             conocimientos con nosotros de manera rápida y sencilla.
                         </p>
                         <div class="mb-4 principal-message">
-                            <img src="./img/app-store.png" alt="" class="img-fluid principal-img mr-4" />
-                            <img src="./img/google-play.png" alt="" class="img-fluid principal-img" />
+                            <a href="https://www.apple.com/la/app-store/" target="_blank">
+                                <img src="./img/app-store.png" alt="" class="img-fluid principal-img mr-4" />
+                            </a>
+
+                            <a href="https://play.google.com/store?hl=es_PE&gl=US" target="_blank">
+                                <img src="./img/google-play.png" alt="" class="img-fluid principal-img" />
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-1 col-md-12"></div>
@@ -94,7 +105,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5 feature-item-container">
                                 <div class="feature-item animated">
                                     <div class="p-2 text-center">
                                         <img src="./img/feature1.png" alt="" class="img-fluid feature-img" />
@@ -107,27 +118,28 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5 feature-item-container">
                                 <div class="feature-item">
                                     <div class="p-2 text-center">
                                         <img src="./img/feature2.png" alt="" class="img-fluid feature-img" />
                                     </div>
-                                    <div class="p-2 text-center fw-bold">Muchas opciones para elegir</div>
+                                    <div class="p-2 text-center fw-bold">Información al alcance de tu mano</div>
                                     <div class="p-2 text-center">
-                                        Podrás encontrar una lista de asesores disponibles en un solo lugar
+                                        Información disponible de cada asesor como áreas de conocimiento, experiencia y
+                                        clasificación
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5">
+                            <div class="d-flex flex-column justify-content-center p-xs-3 p-xl-5 feature-item-container">
                                 <div class="feature-item animated">
                                     <div class="p-2 text-center">
                                         <img src="./img/feature3.png" alt="" class="img-fluid feature-img" />
                                     </div>
-                                    <div class="p-2 text-center fw-bold">Muchas opciones para elegir</div>
+                                    <div class="p-2 text-center fw-bold">Todas tus asesorías a S/. 35</div>
                                     <div class="p-2 text-center">
-                                        Podrás encontrar una lista de asesores disponibles en un solo lugar
+                                        Un precio estándar y cómodo para que no busques más
                                     </div>
                                 </div>
                             </div>
@@ -144,6 +156,7 @@
                             <div>
                                 <div class="app-example-app-right">
                                     <img src="./img/example-app-main.png" alt="" class="example-app img-fluid" />
+
                                     <img
                                         src="./img/example-app-main-reduced.png"
                                         alt=""
@@ -162,7 +175,9 @@
                                     Android.
                                 </div>
                                 <div class="pt-2">
-                                    <img src="./img/AppstoreGoogle.png" alt="" class="feature-img" />
+                                    <a href="https://play.google.com/store?hl=es_PE&gl=US" target="_blank">
+                                        <img src="./img/AppstoreGoogle.png" alt="" class="feature-img" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -415,24 +430,32 @@
                 </div>
             </section>
             <!--Email-->
-            <section class="email p-5" >
+            <section class="email p-5" id="subscribe">
                 <div class="container animated email-container">
                     <div class="row">
-                      <div class="col animated text-center">
-                        <img src="./img/email.png" />
-                      </div>
-                      <div class="col animated">
-                        <h3 class="secondary-title text-white text-center animated">Suscríbete para más novedades</h3>
-                        <div class="input-group mb-3 mt-3">
-                            <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Ingresa tu email" aria-describedby="button-email">
-                            <button class="btn btn-dark" type="button" id="button-email">Suscríbete</button>
-                          </div>
-                      </div>
+                        <div class="col animated text-center">
+                            <img src="./img/email.png" />
+                        </div>
+                        <div class="col animated">
+                            <h3 class="secondary-title text-white text-center animated">
+                                Suscríbete para más novedades
+                            </h3>
+                            <div class="input-group mb-3 mt-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Ingresa tu email"
+                                    aria-label="Ingresa tu email"
+                                    aria-describedby="button-email"
+                                />
+                                <button class="btn btn-dark" type="button" id="button-email">Suscríbete</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </section>
             <!--Asesor-->
-            <section class="px-5 pt-5 bg-white">
+            <section id="teachers" class="px-5 pt-5 bg-white">
                 <h2 class="secondary-title text-primary text-center animated">¿Quieres ser un asesor de Share?</h2>
                 <div class="container mt-2">
                     <div class="row">
@@ -534,21 +557,24 @@
                         <div class="col-md-4">
                             <!-- Links -->
                             <h6 class="fw-bold mb-4">Contacto</h6>
-                            <p>contacto@share.com.pe</p>
-                            <p>+51 922556565</p>
-                            <p>772 Av. Grau - La Molina</p>
+                            <p class="d-flex">
+                                <span class="material-icons mr-2"> email </span>
+                                <span> contacto@share.com.pe </span>
+                            </p>
+                            <p class="d-flex">
+                                <span class="material-icons mr-2"> phone_iphone </span>
+                                <span> +51 922556565</span>
+                            </p>
+                            <p class="d-flex">
+                                <span class="material-icons mr-2"> location_on </span>
+                                <span>772 Av. Grau - La Molina</span>
+                            </p>
                         </div>
                         <!-- Copyright -->
                         <div class="col-xs-12 text-left p-3" style="background-color: #414141">
                             © 2021 Share. Todos los derechos reservados
                         </div>
                         <!-- Copyright -->
-                    </div>
-                    <!-- Grid row -->
-                    <div class="row">
-                        <div class="text-left p-3 footer ml-5" >
-                            © 2021 Share. Todos los derechos reservados
-                        </div>
                     </div>
                 </div>
             </section>
